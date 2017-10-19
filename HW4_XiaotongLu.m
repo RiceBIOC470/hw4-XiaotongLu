@@ -53,8 +53,8 @@ Save in my repository.
 %Xiaotong Lu
 V=VideoWriter('D:\Matlab_Video.avi');
 open(V);
-I1='D:\nfkb_movie1.tif';
-I2='D:\nfkb_movie2.tif';
+I1='nfkb_movie1.tif';
+I2='nfkb_movie2.tif';
 reader1=bfGetReader(I1);
 reader2=bfGetReader(I2);
 nz=reader1.getSizeZ;
@@ -113,7 +113,7 @@ close(V)
 % intensity projection image of the first channel of the first time point
 % of movie 1.
 %Xiaotong Lu
-I1='D:\nfkb_movie1.tif';
+I1='nfkb_movie1.tif';
 reader1=bfGetReader(I1);
 nz=reader1.getSizeZ;
 Ind1=reader1.getIndex(0,0,0)+1;
@@ -163,7 +163,7 @@ Jimg=imread('D:\matlab_P3_2.tif');
 % from channel 1 (that is the max intensity projection from the same time point). Apply your
 % function from 5 to get the mean intensity of the cells in this channel. 
 %Xiaotong Lu
-I1='D:\nfkb_movie1.tif';
+I1='nfkb_movie1.tif';
 reader1=bfGetReader(I1);
 nz=reader1.getSizeZ;
 Ind2=reader1.getIndex(0,1,0)+1;
@@ -185,8 +185,8 @@ C2_1=Smoothimg(I_channel_2,100);
 %Xiaotong Lu
 V=VideoWriter('D:\Matlab_Video_4_1.avi');
 open(V);
-I1='D:\nfkb_movie1.tif';
-I2='D:\nfkb_movie2.tif';
+I1='nfkb_movie1.tif';
+I2='nfkb_movie2.tif';
 reader1=bfGetReader(I1);
 reader2=bfGetReader(I2);
 nz=reader1.getSizeZ;
@@ -236,8 +236,8 @@ close(V)
 % channels as a function of time. Make plots of these with time on the
 % x-axis and either number of cells or intensity on the y-axis. 
 %Xiaotong Lu
-I1='D:\nfkb_movie1.tif';
-I2='D:\nfkb_movie2.tif';
+I1='nfkb_movie1.tif';
+I2='nfkb_movie2.tif';
 reader1=bfGetReader(I1);
 reader2=bfGetReader(I2);
 nz=reader1.getSizeZ;
